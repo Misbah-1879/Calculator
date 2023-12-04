@@ -1,0 +1,60 @@
+body{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator {
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#createVariableButton {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#createVariableButton:hover {
+    background-color: #45a049; 
+}
+.history-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    overflow-y: auto;
+    height: 150px;
+}
+
+.history-item {
+    margin-bottom: 5px;
+}
+
+.history-item button {
+    margin-left: 5px;
+    cursor: pointer;
+}

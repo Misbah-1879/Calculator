@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CalcUI.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="calculator">
+            <input type="text" name="expressionInput" id="expressionInputScreen" />
+            <button id="createVariableButton">Create Variable</button>
+            <div class="buttons">
+                <button class="button" onclick="expressionCreation('+')">+</button>
+                <button class="button" onclick="expressionCreation('-')">-</button>
+                <button class="button" onclick="expressionCreation('*')">*</button>
+                <button class="button" onclick="expressionCreation('/')">/</button>
+                <button class="button" onclick="expressionCreation('sin(')">sin(</button>
+                <button class="button" onclick="expressionCreation('cos(')">cos(</button>
+                <button class="button" onclick="expressionCreation('tan(')">tan(</button>
+                <button class="button" onclick="expressionCreation('sqrt(')">sqrt(</button>
+                <button class="button" onclick="expressionCreation('^')">^</button>
+                <button class="button" onclick="expressionCreation('(')">(</button>
+                <button class="button" onclick="expressionCreation(')')">)</button>
+                <button class="button" onclick="expressionCreation('0')">0</button>
+                <button class="button" onclick="expressionCreation('1')">1</button>
+                <button class="button" onclick="expressionCreation('2')">2</button>
+                <button class="button" onclick="expressionCreation('3')">3</button>
+                <button class="button" onclick="expressionCreation('4')">4</button>
+                <button class="button" onclick="expressionCreation('5')">5</button>
+                <button class="button" onclick="expressionCreation('6')">6</button>
+                <button class="button" onclick="expressionCreation('7')">7</button>
+                <button class="button" onclick="expressionCreation('8')">8</button>
+                <button class="button" onclick="expressionCreation('9')">9</button>
+                <button class="button" onclick="calculateResult()">=</button>
+                <button class="button" onclick="clearInput()">C</button>
+            </div>
+            <div id="outputDisplay">
+            </div>
+           
+        </div>
+        <div id="historyContainer"></div>
+    </div>
+    <script src="Calc.js"></script>
+</body>
+
+</html>
